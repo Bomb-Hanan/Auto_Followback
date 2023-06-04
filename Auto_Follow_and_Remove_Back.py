@@ -1,7 +1,7 @@
 # ライブラリの読み込み
 import tweepy
 
-#''内に実行させたいTwitterアカウントの各キーを入力
+#以下4行にて，''内に実行させたいTwitterアカウントの各キーを入力
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 ACCESS_TOKEN = ''
@@ -26,9 +26,10 @@ for f in flist:
         print(f_id)
 
 # フォロワーの取得
-#''内に実行させたいアカウントのIDを入力(＠は除く)
+#""内に実行させたいアカウントのIDを入力(＠は除く)
 followers = api.get_follower_ids(user_id="")
 # フォローユーザーの取得
+#""内に実行させたいアカウントのIDを入力(＠は除く)
 friends = api.get_friend_ids(user_id="")
 
 # フォローユーザー分だけループ
